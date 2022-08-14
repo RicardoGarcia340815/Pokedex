@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Pokedex || Pokemon</title>
+</head>
+<body>
+
+    <div class="arriba">
+        <h1 class="arriba__titulo">Pokedex</h1>
+        <img class="imagen-pokeball" src="img/pikachu-clipart-pokeball-168566.png" alt="Imagen de pokeball">
+    </div>
+
+    <div class="pokedex">
+        <audio autoplay loop="infinite">
+            <source src="music/y2mate.com - Tono de Batalla Pokémon para usar en WhatsApp.mp3" type="audio/mp3">
+            
+      </audio>
+
+        <div class="resultado-pokemon">
+            <div id="resultado"></div>
+        </div>
+
+        <form action="" id="formulario">
+
+            <div class="campo">
+                <label for="nombre" class="nombre">Busca tu <span class="nombre-pokemon">Pokemon:</span></label>
+
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre de tu Pokemon">
+            </div>
+
+            <input 
+            type="submit"
+            class="btn-pokemon"
+            value="Buscar Pokemon"
+        />
+
+        </form>
+
+    </div>
+
+
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

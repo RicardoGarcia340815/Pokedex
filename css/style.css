@@ -1,0 +1,125 @@
+:root{
+    --blanco: white;
+    --amarillo: yellow;
+    --gris: gray;
+}
+
+body {
+    background-color: #0d2235;
+}
+img {
+    max-width: 100%;
+}
+
+h1 {
+    color: var(--blanco);
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 900;
+    margin: 3rem 0;
+
+}
+
+.arriba{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0rem;
+    
+}
+.imagen-pokeball{
+    width: 15rem;
+    margin: 0 auto;
+}
+@media(min-width: 992px){
+    .arriba{
+        flex-direction: row;
+        justify-content: center
+    }
+    .imagen-pokeball{
+        width: 10rem;
+        margin: 0;
+    }
+}
+
+.pokedex{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.campo .nombre{
+    color:  var(--amarillo);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.campo .nombre span{
+
+    color: var(--gris);
+    font-weight: 700;
+}
+
+@media(min-width: 992px){
+    .campo .nombre{
+        font-size: 3rem;
+    }
+}
+
+.campo input{
+    
+    padding: 1rem 4rem;  
+   color: red;
+   font-size: 1rem;
+   font-weight: 700;
+}
+
+.btn-pokemon{
+    padding: 1rem 3rem;
+    background-color: red;
+    border: none;
+    color: var(--blanco);
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+
+}
+
+@media (min-width: 600px){
+    
+    .btn-pokemon{
+        width: 0 auto;
+        
+    }
+}
+
+.btn-pokemon:hover{
+    cursor: pointer;
+    background-color: var(--blanco);
+    color: black;
+    font-weight: 700;
+    
+}
+
+.resultado-pokemon{
+    margin: 1rem 0;
+}
+
+
+.alerta{
+    padding: 2rem 1rem;
+    background-color: crimson;
+    color:  var(--blanco);
+    font-size: 1rem;
+    font-weight: 3rem;
+}
